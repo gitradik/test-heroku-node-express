@@ -6,8 +6,8 @@ dotenv.config();
 
 const PORT = process.env.PORT || 80;
 
-app.get('/', function (req, res) {
-  res.send('Доброе утро, Денис');
+app.get('/', (req, res) => {
+  res.send('Hello World');
 });
 
 app.listen(PORT);
