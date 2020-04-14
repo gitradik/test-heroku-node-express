@@ -1,10 +1,11 @@
 const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
-
 dotenv.config(); 
 
 const PORT = process.env.PORT || 80;
+
+app.use(express.json());
 
 const { pool } = require('./db');
 
@@ -12,6 +13,10 @@ app.get('/', (req, res) => {
   const { name } = req.query;
   const message = `Hello ${name ? name : 'World'}`;
   res.send(message);
+});
+
+app.put('/', (req, res) => {
+  res.send(req.body); 
 });
 
 app.get('/db', async (req, res) => {
