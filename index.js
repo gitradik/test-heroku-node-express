@@ -15,6 +15,15 @@ app.get('/', (req, res) => {
   res.send(message);
 });
 
+app.get('/test', (req, res) => {
+  const message = {
+    name: "John",
+    age: 30  
+  };
+  res.send(message);
+});
+
+
 app.put('/', (req, res) => {
   res.send(req.body); 
 });
