@@ -20,7 +20,7 @@ app.get('/test', (req, res) => {
     name: "John",
     age: 30  
   };
-  res.send(message);
+  res.send(JSON.stringify(message));
 });
 
 
