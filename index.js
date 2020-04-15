@@ -17,9 +17,15 @@ app.get('/', (req, res) => {
 
 app.get('/test', (req, res) => {
   const message = {
-    name: "Johny",
-    age: 30,
-    work: 45  
+    version: "v2",
+    content:{
+      messages: [
+        {
+          type: "text",
+          text: "simple text"
+        }
+      ]
+    }
   };
   res.send(JSON.stringify(message));
 });
