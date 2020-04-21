@@ -356,6 +356,9 @@ app.post('/bst', (req, res) => {
     case 4: 
       res.send(qv04);
       break;
+    case 5: 
+      res.send(qv05);
+      break;
     default:
       res.send(message);
   }
