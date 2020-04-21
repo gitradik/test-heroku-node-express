@@ -86,12 +86,7 @@ const qv01 = {
             title: "Дверь не подлежала реставрации",
             image_url: "./img/q04.png",
             buttons: []
-          },
-          {
-            title: "Подобных проблем никогда не возникало!",
-            image_url: "./img/q05.png",
-            buttons: []
-          },
+          }
         ]
       }
     ],
