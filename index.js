@@ -56,14 +56,21 @@ const gallery = {
   }
 };
 
-console.log(gallery);
+
 
 app.get('/test', (req, res) => {
   res.send(JSON.stringify(message));
 });
 
-app.get('/bst', (req, res) => {
-  res.send(JSON.stringify(gallery));
+app.post('/bst', (req, res) => {
+  let count =  JSON.parse(req.body);
+  if(count.count == 1)
+  {
+    res.send(JSON.stringify(gallery));
+  }else{
+    res.send(JSON.stringify(message));
+  }
+  
 });
 
 app.put('/', (req, res) => {
