@@ -15,22 +15,18 @@ app.get('/', (req, res) => {
   res.send(message);
 });
 
-app.get('/test', (req, res) => {
-  const message = {
-    version: "v2",
-    content:{
-      messages: [
-        {
-          type: "text",
-          text: "simple text"
-        }
-      ]
-    }
-  };
-  res.send(JSON.stringify(message));
-});
-
-let message = {
+const message = {
+  version: "v2",
+  content:{
+    messages: [
+      {
+        type: "text",
+        text: "simple text"
+      }
+    ]
+  }
+}
+const gallery = {
   version: "v2",
   content: {
     messages: [
@@ -60,9 +56,14 @@ let message = {
   }
 };
 
-app.get('/bst', (req, res) => {
+console.log(gallery);
 
+app.get('/test', (req, res) => {
   res.send(JSON.stringify(message));
+});
+
+app.get('/bst', (req, res) => {
+  res.send(JSON.stringify(gallery));
 });
 
 app.put('/', (req, res) => {
