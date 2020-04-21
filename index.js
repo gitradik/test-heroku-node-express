@@ -27,6 +27,85 @@ const message = {
   }
 };
 
+const qv05 = {
+  version: "v2",
+  content: {
+    messages: [
+      {
+        type: "text",
+        text: "Выберите одну из представленных моделей"
+      },
+      {
+        type: "cards",
+        elements: [
+          {
+            title: "Модель 01",
+            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv05_01.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 6,
+                }
+              }
+            ]
+          },
+          {
+            title: "Модель 02",
+            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv05_01.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 6,
+                }
+              }
+            ]
+          },
+          {
+            title: "Модель 03",
+            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv05_01.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 6,
+                }
+              }
+            ]
+          },
+          {
+            title: "Модель 05",
+            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv05_01.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 6,
+                }
+              }
+            ]
+          }
+        ],
+        image_aspect_ratio: "horizontal"
+      }
+    ],
+    actions: [],
+    quick_replies: []
+  }
+};
 
 const qv04 = {
   version: "v2",
