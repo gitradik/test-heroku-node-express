@@ -31,6 +31,40 @@ app.get('/test', (req, res) => {
 });
 
 
+
+app.get('/bst', (req, res) => {
+  const message = {
+    version: "v2",
+    content: {
+      messages: [
+        {
+          type: "cards",
+          elements: [
+            {
+              title: "Card title",
+              subtitle: "card text",
+              image_url: "https://manybot-thumbnails.s3.eu-central-1.amazonaws.com/ca/xxxxxxzzzzzzzzz.png",
+              action_url: "https://manychat.com",
+              buttons: []
+            },
+            {
+              title: "Card title 2",
+              subtitle: "card text 2",
+              image_url: "https://manybot-thumbnails.s3.eu-central-1.amazonaws.com/ca/xxxxxxzzzzzzzzz.png",
+              action_url: "https://manychat.com",
+              buttons: []
+            }
+          ],
+          image_aspect_ratio: "horizontal"
+        }
+      ],
+      actions: [],
+      quick_replies: []
+    }
+  }
+  res.send(JSON.stringify(message));
+});
+
 app.put('/', (req, res) => {
   res.send(req.body); 
 });
