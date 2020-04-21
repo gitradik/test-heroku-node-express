@@ -43,6 +43,11 @@ const qv08 = {
     content: {
       messages: [
         {
+          type: "image",
+          url: "https://dekoriko.ru/images/article/thumb/480-0/2017/11/skrytye-dveri-sovremennoe-dizajnerskoe-reshenie.png",
+          buttons: []
+        },
+        {
           type: "text",
           text: doors.model001.name,
         },
