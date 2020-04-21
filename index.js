@@ -66,9 +66,9 @@ app.post('/bst', (req, res) => {
   let test = req.body.count;
   if(test == "1")
   {
-    res.send({gallery});
+    res.send(gallery);
   }else{
-    res.send({message});
+    res.send(message);
   }
   
 });
