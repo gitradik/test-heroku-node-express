@@ -63,12 +63,12 @@ app.get('/test', (req, res) => {
 });
 
 app.post('/bst', (req, res) => {
-  let count =  JSON.parse(req.body);
-  if(count.count == 1)
+  let test = req.body.count;
+  if(test == "1")
   {
-    res.send(JSON.stringify(gallery));
+    res.send({gallery});
   }else{
-    res.send(JSON.stringify(message));
+    res.send({message});
   }
   
 });
