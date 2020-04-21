@@ -25,8 +25,54 @@ const message = {
       }
     ]
   }
-}
+};
 
+
+const qv04 = {
+  version: "v2",
+  content: {
+    messages: [
+      {
+        type: "cards",
+        elements: [
+          {
+            title: "Двери с повышенной шумоизоляцией",
+            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv04_01.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 5,
+                }
+              }
+            ]
+          },
+          {
+            title: "Двери с повышенной шумоизоляцией",
+            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv04_02.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 5,
+                }
+              }
+            ]
+          }
+        ],
+        image_aspect_ratio: "horizontal"
+      }
+    ],
+    actions: [],
+    quick_replies: []
+  }
+};
 
 const qv03 = {
   version: "v2",
@@ -227,6 +273,9 @@ app.post('/bst', (req, res) => {
       break;
     case 3: 
       res.send(qv03);
+      break;
+    case 4: 
+      res.send(qv04);
       break;
     default:
       res.send(message);
