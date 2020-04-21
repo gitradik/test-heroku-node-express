@@ -15,6 +15,15 @@ app.get('/', (req, res) => {
   res.send(message);
 });
 
+
+const doors = {
+  model001:{
+    name: "model001",
+    img: "https://radiant-stream-65729.herokuapp.com/img/qv07_02.png",
+    price: "3000 грн"
+  }
+};
+
 const message = {
   version: "v2",
   content:{
@@ -24,6 +33,131 @@ const message = {
         text: "Ошибка"
       }
     ]
+  }
+};
+
+
+
+const qv08 = {
+    version: "v2",
+    content: {
+      messages: [
+        {
+          type: "text",
+          text: doors.model001.name,
+        },
+        {
+          type: "text",
+          text: doors.model001.price,
+        },
+        {
+          type: "image",
+          url: doors.model001.img,
+          buttons: []
+        },
+        {
+          type: "text",
+          text: "Укажите контактный номер телефона",
+        }
+      ],
+      actions: [],
+      quick_replies: []
+    }
+};
+
+const qv07 = {
+  version: "v2",
+  content: {
+    messages: [
+      {
+        type: "text",
+        text: "Выберите цвет"
+      },
+      {
+        type: "cards",
+        elements: [
+          {
+            title: "Белый ясень",
+            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv07_01.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Палисандр",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 8,
+                }
+              }
+            ]
+          },
+          {
+            title: "Палисандр",
+            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv07_02.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 8,
+                }
+              }
+            ]
+          }
+        ],
+        image_aspect_ratio: "horizontal"
+      }
+    ],
+    actions: [],
+    quick_replies: []
+  }
+};
+
+const qv06 = {
+  version: "v2",
+  content: {
+    messages: [
+      {
+        type: "cards",
+        elements: [
+          {
+            title: "Без стекла",
+            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv06_02.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 7,
+                }
+              }
+            ]
+          },
+          {
+            title: "Со стеклом",
+            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv06_01.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 7,
+                }
+              }
+            ]
+          }
+        ],
+        image_aspect_ratio: "horizontal"
+      }
+    ],
+    actions: [],
+    quick_replies: []
   }
 };
 
@@ -358,6 +492,18 @@ app.post('/bst', (req, res) => {
       break;
     case 5: 
       res.send(qv05);
+      break;
+    case 6: 
+      res.send(qv06);
+      break;
+    case 7: 
+      res.send(qv07);
+      break;
+    case 8: 
+      res.send(qv08);
+      break;
+    case 9: 
+      res.send(qv09);
       break;
     default:
       res.send(message);
