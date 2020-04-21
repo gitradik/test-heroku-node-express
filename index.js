@@ -26,6 +26,8 @@ const message = {
     ]
   }
 }
+
+
 const gallery = {
   version: "v2",
   content: {
@@ -56,6 +58,47 @@ const gallery = {
   }
 };
 
+const qv01 = {
+  version: "v2",
+  content: {
+    messages: [
+      {
+        type: "list",
+        top_element_style: "compact",
+        buttons: [],
+        elements: [
+          {
+            title: "Плохая звукоизоляция",
+            image_url: "./img/q01.png",
+            buttons: []
+          },
+          {
+            title: "Плохая устойчивость к влаге",
+            image_url: "./img/q02.png",
+            buttons: []
+          },
+          {
+            title: "Некачественные материалы",
+            image_url: "./img/q03.png",
+            buttons: []
+          },
+          {
+            title: "Дверь не подлежала реставрации",
+            image_url: "./img/q04.png",
+            buttons: []
+          },
+          {
+            title: "Подобных проблем никогда не возникало!",
+            image_url: "./img/q05.png",
+            buttons: []
+          },
+        ]
+      }
+    ],
+    actions: [],
+    quick_replies: []
+  }
+};
 
 
 app.get('/test', (req, res) => {
@@ -63,10 +106,12 @@ app.get('/test', (req, res) => {
 });
 
 app.post('/bst', (req, res) => {
-  let test = req.body.count;
-  if(test == "1")
+
+  let main = req.body;
+
+  if(main.count == 1)
   {
-    res.send(gallery);
+    res.send(qv01);
   }else{
     res.send(message);
   }
