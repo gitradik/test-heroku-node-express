@@ -69,22 +69,22 @@ const qv01 = {
         elements: [
           {
             title: "Плохая звукоизоляция",
-            image_url: "./img/q01.png",
+            image_url: "https://radiant-stream-65729.herokuapp.com/img/q01.png",
             buttons: []
           },
           {
             title: "Плохая устойчивость к влаге",
-            image_url: "./img/q02.png",
+            image_url: "https://radiant-stream-65729.herokuapp.com/img/q02.png",
             buttons: []
           },
           {
             title: "Некачественные материалы",
-            image_url: "./img/q03.png",
+            image_url: "https://radiant-stream-65729.herokuapp.com/img/q03.png",
             buttons: []
           },
           {
             title: "Дверь не подлежала реставрации",
-            image_url: "./img/q04.png",
+            image_url: "https://radiant-stream-65729.herokuapp.com/img/q04.png",
             buttons: []
           }
         ]
