@@ -21,14 +21,14 @@ const message = {
     messages: [
       {
         type: "text",
-        text: "simple text"
+        text: "Ошибка"
       }
     ]
   }
 }
 
 
-const gallery = {
+const qv02 = {
   version: "v2",
   content: {
     messages: [
@@ -36,18 +36,49 @@ const gallery = {
         type: "cards",
         elements: [
           {
-            title: "Card title",
-            subtitle: "card text",
-            image_url: "https://manybot-thumbnails.s3.eu-central-1.amazonaws.com/ca/xxxxxxzzzzzzzzz.png",
-            action_url: "https://manychat.com",
-            buttons: []
+            title: "КЛАССИЧЕСКИЕ ДВЕРИ",
+            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv02_01.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 3,
+                }
+              }
+            ]
           },
           {
-            title: "Card title 2",
-            subtitle: "card text 2",
-            image_url: "https://manybot-thumbnails.s3.eu-central-1.amazonaws.com/ca/xxxxxxzzzzzzzzz.png",
-            action_url: "https://manychat.com",
-            buttons: []
+            title: "СОВРЕМЕННЫЕ ДВЕРИ",
+            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv02_02.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 3,
+                }
+              }
+            ]
+          },
+          {
+            title: "СКРЫТЫЕ ДВЕРИ",
+            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv02_03.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 3,
+                }
+              }
+            ]
           }
         ],
         image_aspect_ratio: "horizontal"
@@ -73,11 +104,11 @@ const qv01 = {
             buttons: [
               {
                 type: "dynamic_block_callback",
-                caption: "Да",
+                caption: "Выбрать",
                 url: "https://radiant-stream-65729.herokuapp.com/bst",
                 method: "post",
                 payload: {
-                  count: 1,
+                  count: 2,
                 }
               }
             ]
@@ -85,17 +116,47 @@ const qv01 = {
           {
             title: "Плохая устойчивость к влаге",
             image_url: "https://radiant-stream-65729.herokuapp.com/img/q02.png",
-            buttons: []
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 2,
+                }
+              }
+            ]
           },
           {
             title: "Некачественные материалы",
             image_url: "https://radiant-stream-65729.herokuapp.com/img/q03.png",
-            buttons: []
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 2,
+                }
+              }
+            ]
           },
           {
             title: "Дверь не подлежала реставрации",
             image_url: "https://radiant-stream-65729.herokuapp.com/img/q04.png",
-            buttons: []
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 2,
+                }
+              }
+            ]
           }
         ]
       }
@@ -106,21 +167,21 @@ const qv01 = {
 };
 
 
-app.get('/test', (req, res) => {
-  res.send(JSON.stringify(message));
-});
 
 app.post('/bst', (req, res) => {
 
   let main = req.body;
 
-  if(main.count == 1)
-  {
-    res.send(qv01);
-  }else{
-    res.send(message);
+  switch (main.count){
+    case 1: 
+      res.send(qv01);
+      break;
+    case 2: 
+      res.send(qv02);
+      break;
+    default:
+      res.send(message);
   }
-  
 });
 
 app.put('/', (req, res) => {
