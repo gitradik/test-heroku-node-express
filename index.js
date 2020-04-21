@@ -64,13 +64,20 @@ const qv01 = {
     messages: [
       {
         type: "list",
-        top_element_style: "compact",
+        top_element_style: "large",
         buttons: [],
         elements: [
           {
             title: "Плохая звукоизоляция",
             image_url: "https://radiant-stream-65729.herokuapp.com/img/q01.png",
-            buttons: []
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Dynamic content",
+                url: "https://your-service.com/dynamic",
+                method: "post",
+              }
+            ]
           },
           {
             title: "Плохая устойчивость к влаге",
