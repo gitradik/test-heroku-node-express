@@ -64,7 +64,7 @@ const qv01 = {
     messages: [
       {
         type: "list",
-        top_element_style: "large",
+        top_element_style: "compact",
         buttons: [],
         elements: [
           {
@@ -74,7 +74,7 @@ const qv01 = {
               {
                 type: "dynamic_block_callback",
                 caption: "Dynamic content",
-                url: "https://your-service.com/dynamic",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
                 method: "post",
               }
             ]
