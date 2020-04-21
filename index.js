@@ -76,6 +76,11 @@ const qv01 = {
                 caption: "Dynamic content",
                 url: "https://radiant-stream-65729.herokuapp.com/bst",
                 method: "post",
+                body: [
+                    {
+                      "count": "1"
+                    }
+                ]
               }
             ]
           },
