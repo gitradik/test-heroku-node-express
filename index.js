@@ -51,10 +51,6 @@ const qv08 = {
           text: doors.model001.price,
         },
         {
-          type: "image",
-          url: doors.model001.img,
-        },
-        {
           type: "text",
           text: "Укажите контактный номер телефона",
         }
