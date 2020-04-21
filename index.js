@@ -73,13 +73,15 @@ const qv01 = {
             buttons: [
               {
                 type: "dynamic_block_callback",
-                caption: "Dynamic content",
+                caption: "Да",
                 url: "https://radiant-stream-65729.herokuapp.com/bst",
                 method: "post",
-                body:
+                payload: {
+                  body: 
                   {
-                    count: "1"
+                    count: 1
                   }
+                }
               }
             ]
           },
