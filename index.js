@@ -171,7 +171,7 @@ const qv01 = {
 app.post('/bst', (req, res) => {
 
   let main = req.body;
-
+  
   switch (main.count){
     case 1: 
       res.send(qv01);
@@ -182,6 +182,7 @@ app.post('/bst', (req, res) => {
     default:
       res.send(message);
   }
+  console.log(main.count);
 });
 
 app.put('/', (req, res) => {
