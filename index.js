@@ -28,6 +28,52 @@ const message = {
 }
 
 
+const qv03 = {
+  version: "v2",
+  content: {
+    messages: [
+      {
+        type: "cards",
+        elements: [
+          {
+            title: "На завтра! (на завтра существуют двери только в современном дизайне)",
+            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv03_01.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 4,
+                }
+              }
+            ]
+          },
+          {
+            title: "Готов подождать",
+            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv03_02.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 4,
+                }
+              }
+            ]
+          }
+        ],
+        image_aspect_ratio: "horizontal"
+      }
+    ],
+    actions: [],
+    quick_replies: []
+  }
+};
+
 const qv02 = {
   version: "v2",
   content: {
@@ -178,6 +224,9 @@ app.post('/bst', (req, res) => {
       break;
     case 2: 
       res.send(qv02);
+      break;
+    case 3: 
+      res.send(qv03);
       break;
     default:
       res.send(message);
