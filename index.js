@@ -77,10 +77,7 @@ const qv01 = {
                 url: "https://radiant-stream-65729.herokuapp.com/bst",
                 method: "post",
                 payload: {
-                  body: 
-                  {
-                    count: 1
-                  }
+                  count: 1,
                 }
               }
             ]
