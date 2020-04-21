@@ -53,7 +53,6 @@ const qv08 = {
         {
           type: "image",
           url: doors.model001.img,
-          buttons: []
         },
         {
           type: "text",
