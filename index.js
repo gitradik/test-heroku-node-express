@@ -81,7 +81,7 @@ const qv07 = {
         elements: [
           {
             title: "Белый ясень",
-            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv07_01.png",
+            image_url: "qv07_01.png",
             buttons: [
               {
                 type: "dynamic_block_callback",
@@ -96,7 +96,7 @@ const qv07 = {
           },
           {
             title: "Палисандр",
-            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv07_02.png",
+            image_url: "qv07_02.png",
             buttons: [
               {
                 type: "dynamic_block_callback",
@@ -127,7 +127,7 @@ const qv06 = {
         elements: [
           {
             title: "Без стекла",
-            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv06_02.png",
+            image_url: "qv06_02.png",
             buttons: [
               {
                 type: "dynamic_block_callback",
@@ -142,7 +142,7 @@ const qv06 = {
           },
           {
             title: "Со стеклом",
-            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv06_01.png",
+            image_url: "qv06_01.png",
             buttons: [
               {
                 type: "dynamic_block_callback",
@@ -177,7 +177,7 @@ const qv05 = {
         elements: [
           {
             title: "Модель 01",
-            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv05_01.png",
+            image_url: "qv05_01.png",
             buttons: [
               {
                 type: "dynamic_block_callback",
@@ -192,7 +192,7 @@ const qv05 = {
           },
           {
             title: "Модель 02",
-            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv05_01.png",
+            image_url: "qv05_01.png",
             buttons: [
               {
                 type: "dynamic_block_callback",
@@ -207,7 +207,7 @@ const qv05 = {
           },
           {
             title: "Модель 03",
-            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv05_01.png",
+            image_url: "qv05_01.png",
             buttons: [
               {
                 type: "dynamic_block_callback",
@@ -222,7 +222,7 @@ const qv05 = {
           },
           {
             title: "Модель 05",
-            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv05_01.png",
+            image_url: "qv05_01.png",
             buttons: [
               {
                 type: "dynamic_block_callback",
@@ -253,7 +253,7 @@ const qv04 = {
         elements: [
           {
             title: "Двери с повышенной шумоизоляцией",
-            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv04_01.png",
+            image_url: "qv04_01.png",
             buttons: [
               {
                 type: "dynamic_block_callback",
@@ -268,7 +268,7 @@ const qv04 = {
           },
           {
             title: "Двери с повышенной шумоизоляцией",
-            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv04_02.png",
+            image_url: "qv04_02.png",
             buttons: [
               {
                 type: "dynamic_block_callback",
@@ -299,7 +299,7 @@ const qv03 = {
         elements: [
           {
             title: "На завтра! (на завтра существуют двери только в современном дизайне)",
-            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv03_01.png",
+            image_url: "qv03_01.png",
             buttons: [
               {
                 type: "dynamic_block_callback",
@@ -314,7 +314,7 @@ const qv03 = {
           },
           {
             title: "Готов подождать",
-            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv03_02.png",
+            image_url: "qv03_02.png",
             buttons: [
               {
                 type: "dynamic_block_callback",
@@ -345,7 +345,7 @@ const qv02 = {
         elements: [
           {
             title: "КЛАССИЧЕСКИЕ ДВЕРИ",
-            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv02_01.png",
+            image_url: "qv02_01.png",
             buttons: [
               {
                 type: "dynamic_block_callback",
@@ -360,7 +360,7 @@ const qv02 = {
           },
           {
             title: "СОВРЕМЕННЫЕ ДВЕРИ",
-            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv02_02.png",
+            image_url: "qv02_02.png",
             buttons: [
               {
                 type: "dynamic_block_callback",
@@ -375,7 +375,7 @@ const qv02 = {
           },
           {
             title: "СКРЫТЫЕ ДВЕРИ",
-            image_url: "https://radiant-stream-65729.herokuapp.com/img/qv02_03.png",
+            image_url: "qv02_03.png",
             buttons: [
               {
                 type: "dynamic_block_callback",
@@ -408,7 +408,7 @@ const qv01 = {
         elements: [
           {
             title: "Плохая звукоизоляция",
-            image_url: "https://radiant-stream-65729.herokuapp.com/img/q01.png",
+            image_url: "q01.png",
             buttons: [
               {
                 type: "dynamic_block_callback",
@@ -423,7 +423,7 @@ const qv01 = {
           },
           {
             title: "Плохая устойчивость к влаге",
-            image_url: "https://radiant-stream-65729.herokuapp.com/img/q02.png",
+            image_url: "q02.png",
             buttons: [
               {
                 type: "dynamic_block_callback",
@@ -438,7 +438,7 @@ const qv01 = {
           },
           {
             title: "Некачественные материалы",
-            image_url: "https://radiant-stream-65729.herokuapp.com/img/q03.png",
+            image_url: "q03.png",
             buttons: [
               {
                 type: "dynamic_block_callback",
@@ -453,7 +453,7 @@ const qv01 = {
           },
           {
             title: "Дверь не подлежала реставрации",
-            image_url: "https://radiant-stream-65729.herokuapp.com/img/q04.png",
+            image_url: "q04.png",
             buttons: [
               {
                 type: "dynamic_block_callback",
