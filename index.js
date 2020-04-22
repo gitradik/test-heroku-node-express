@@ -18,7 +18,6 @@ const { pool } = require('./db');
 //   res.send(message);
 // });
 
-
 const doors = {
   model001:{
     name: "model001",
@@ -39,8 +38,6 @@ const message = {
     ]
   }
 };
-
-
 
 const qv08 = {
     version: "v2",
@@ -475,8 +472,6 @@ const qv01 = {
   }
 };
 
-
-
 app.post('/bst', (req, res) => {
 
   const main = req.body;
@@ -519,14 +514,12 @@ app.put('/', (req, res) => {
   res.send(req.body); 
 });
 
-
 app.get('/', (req, res) => {
   // const { name } = req.query;
   // const message = `Hello ${name ? name : 'World'}`;
   
   res.send(qv01);
 });
-
 
 app.get('/db', async (req, res) => {
   try {
@@ -539,6 +532,7 @@ app.get('/db', async (req, res) => {
     res.send("Error " + err);
   }
 });
+
 app.use('/static/image',
     express.static(__dirname + process.env.STATIC_URL, { fallthrough: true }),
     function (req, res) {
