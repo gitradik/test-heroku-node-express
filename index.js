@@ -408,7 +408,7 @@ const qv01 = {
         elements: [
           {
             title: "Плохая звукоизоляция",
-            image_url: " https://radiant-stream-65729.herokuapp.com/static/image/q01.png",
+            image_url: "q01.png",
             buttons: [
               {
                 type: "dynamic_block_callback",
@@ -423,7 +423,7 @@ const qv01 = {
           },
           {
             title: "Плохая устойчивость к влаге",
-            image_url: "https://radiant-stream-65729.herokuapp.com/static/image/q02.png",
+            image_url: "q02.png",
             buttons: [
               {
                 type: "dynamic_block_callback",
