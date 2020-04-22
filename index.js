@@ -21,7 +21,8 @@ app.get('/', (req, res) => {
 const doors = {
   model001:{
     name: "model001",
-    img: "https://radiant-stream-65729.herokuapp.com/img/qv07_02.png",
+    // В БАЗЕ ДАННЫХ ОБЫЧНО ХРАНЯТСЯ ТОЛЬКО НАЗВЫНИЯ ФАЙЛОВ И НА ФРОНТЕ ТЕБЕ НУЖНО БУДТЕ ТОЛЬКО ПОДСТАВИТЬ `https://server-url/static/image/${file.name}`
+    img: "qv07_02.png",
     price: "3000 грн"
   }
 };
