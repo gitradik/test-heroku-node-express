@@ -1,10 +1,12 @@
 const express = require('express');
-const app = express();
+const cors = require('cors');
 const dotenv = require('dotenv');
+const app = express();
 dotenv.config(); 
 
 const PORT = process.env.PORT || 80;
 
+app.use(cors());
 app.use(express.json());
 
 const { pool } = require('./db');
@@ -475,7 +477,7 @@ const qv01 = {
 
 app.post('/bst', (req, res) => {
 
-  let main = req.body;
+  const main = req.body;
   
   switch (main.count){
     case 1: 
@@ -520,11 +522,17 @@ app.get('/db', async (req, res) => {
     const clientDb = await pool.connect();
     const result = await clientDb.query('SELECT * FROM test_table');
     const results = { 'results': (result) ? result.rows : null};
-    res.send(JSON.stringify(results));
+    res.send(results);
     client.release();
   } catch (err) {
     res.send("Error " + err);
   }
 });
+app.use('/static/image',
+    express.static(__dirname + process.env.STATIC_URL, { fallthrough: true }),
+    function (req, res) {
+        res.sendFile(__dirname + process.env.STATIC_URL + '/' + process.env.STATIC_IMG_DEFAULT);
+    },
+);
 
 app.listen(PORT);
