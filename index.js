@@ -521,8 +521,8 @@ app.put('/', (req, res) => {
 
 
 app.get('/', (req, res) => {
-  const { name } = req.query;
-  const message = `Hello ${name ? name : 'World'}`;
+  // const { name } = req.query;
+  // const message = `Hello ${name ? name : 'World'}`;
   
   res.send(qv01);
 });
