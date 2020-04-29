@@ -1,15 +1,15 @@
 const express = require('express');
-const cors = require('cors');
-const dotenv = require('dotenv');
 const app = express();
+const cors = require('cors');
+
+const dotenv = require('dotenv');
 dotenv.config(); 
 
 const PORT = process.env.PORT || 80;
 
 app.use(cors());
 app.use(express.json());
-
-const { pool } = require('./db');
+ 
 
 // app.get('/', (req, res) => {
 //   const { name } = req.query;
@@ -531,6 +531,39 @@ app.get('/db', async (req, res) => {
   } catch (err) {
     res.send("Error " + err);
   }
+});
+
+const db = require('./models');
+const Chat = require('./models/chat')(db.sequelize, db.Sequelize);
+
+app.post('/chat', async (req, res) => {
+  const newChat = new Chat(req.body);
+  
+  try {
+    await newChat.save();
+  } catch (err) {
+    // console.error(err.errors);
+  } 
+
+  res.send(newChat);
+});
+
+app.get('/chat/:id', async (req, res) => {
+  const id = req.params.id;
+
+  let chats = [];
+
+  try {
+    chats = await Chat.findAll({
+      where: {
+        userId: id
+      },
+    })
+  } catch (err) {
+    // console.error(err.errors);
+  } 
+
+  res.send(chats);
 });
 
 app.use('/static/image',

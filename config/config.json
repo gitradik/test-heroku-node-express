@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "psql_user",
+    "password": "psql_user",
+    "database": "radiant",
+    "host": "localhost",
+    "dialect": "postgresql",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "",
+    "password": "",
+    "database": "",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": "qumytzzpempcor",
+    "password": "3d4a7db4f350b7fdf92ccee1842acbed5541fe2488d47bdded1a0d687f03b50b",
+    "database": "d34qsumomi8gie",
+    "host": "ec2-184-72-235-159.compute-1.amazonaws.com",
+    "dialect": "postgresql",
+    "operatorsAliases": false
+  }
+}
