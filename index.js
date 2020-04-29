@@ -19,12 +19,15 @@ const { pool } = require('./db');
 // });
 
 const doors = {
-  model001:{
-    name: "model001",
-    // В БАЗЕ ДАННЫХ ОБЫЧНО ХРАНЯТСЯ ТОЛЬКО НАЗВЫНИЯ ФАЙЛОВ И НА ФРОНТЕ ТЕБЕ НУЖНО БУДТЕ ТОЛЬКО ПОДСТАВИТЬ `https://server-url/static/image/${file.name}`
-    img: "https://radiant-stream-65729.herokuapp.com/static/image/qv07_02.png",
-    price: "3000 грн",
-    price: "3000 грн"
+  sc04:{
+    name: 'SC-04',
+    type: 'modern',
+    time: 'fast',
+    adv: 'normal',
+    modelType: '01',
+    glass: false,
+    color: ''
+    img: 'https://radiant-stream-65729.herokuapp.com/static/image/qv07_02.png',
   }
 };
 
@@ -39,6 +42,8 @@ const message = {
     ]
   }
 };
+
+
 
 const qv08 = {
     version: "v2",
@@ -266,7 +271,7 @@ const qv04 = {
             ]
           },
           {
-            title: "Двери с повышенной шумоизоляцией",
+            title: "Стандартные двери",
             image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv04_02.png",
             buttons: [
               {
