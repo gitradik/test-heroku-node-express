@@ -16,6 +16,7 @@
     "operatorsAliases": false
   },
   "production": {
+    "use_env_variable": "postgres://qumytzzpempcor:3d4a7db4f350b7fdf92ccee1842acbed5541fe2488d47bdded1a0d687f03b50b@ec2-184-72-235-159.compute-1.amazonaws.com:5432/d34qsumomi8gie",
     "username": "qumytzzpempcor",
     "password": "3d4a7db4f350b7fdf92ccee1842acbed5541fe2488d47bdded1a0d687f03b50b",
     "database": "d34qsumomi8gie",
