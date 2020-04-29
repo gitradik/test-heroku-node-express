@@ -26,7 +26,7 @@ const doors = {
     adv: 'normal',
     modelType: '01',
     glass: false,
-    color: ''
+    color: '',
     img: 'https://radiant-stream-65729.herokuapp.com/static/image/qv07_02.png',
   }
 };
@@ -49,19 +49,19 @@ const qv08 = {
     version: "v2",
     content: {
       messages: [
-        {
-          type: "text",
-          text: doors.model001.name,
-        },
-        {
-          type: "text",
-          text: doors.model001.price,
-        },
-        {
-          type: "image",
-          url: doors.model001.img,
-          buttons: []
-        },
+        // {
+        //   type: "text",
+        //   text: doors.model001.name,
+        // },
+        // {
+        //   type: "text",
+        //   text: doors.model001.price,
+        // },
+        // {
+        //   type: "image",
+        //   url: doors.model001.img,
+        //   buttons: []
+        // },
         {
           type: "text",
           text: "Укажите контактный номер телефона",
