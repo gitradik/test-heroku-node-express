@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node_modules/.bin/sequelize db:migrate && node index.js",
+    "start": "heroku run sequelize db:migrate --env production -m --app radiant-stream-65729 && node index.js",
     "dev": "nodemon"
   },
   "author": "",
