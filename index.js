@@ -519,12 +519,13 @@ app.post('/chat', async (req, res) => {
   
   try {
     const chat = await newChat.save();
+
     res.send(chat);
   } catch (err) {
-    console.error(err);
+    res.send(err);
   } 
 
-  res.send({ err: 'invalid' });
+  res.end();
 });
 
 app.get('/chat/:id', async (req, res) => {
@@ -535,14 +536,17 @@ app.get('/chat/:id', async (req, res) => {
   try {
     chats = await Chat.findAll({
       where: {
-        userId: id
+        userId: id,
       },
-    })
+    });
+
+    res.send(chats);
   } catch (err) {
+    res.send(err);
     // console.error(err.errors);
   } 
 
-  res.send(chats);
+  res.end();
 });
 
 app.use('/static/image',
