@@ -9,14 +9,6 @@ const PORT = process.env.PORT || 80;
 
 app.use(cors());
 app.use(express.json());
- 
-
-// app.get('/', (req, res) => {
-//   const { name } = req.query;
-//   const message = `Hello ${name ? name : 'World'}`;
-
-//   res.send(message);
-// });
 
 const doors = {
   sc04:{
@@ -42,8 +34,6 @@ const message = {
     ]
   }
 };
-
-
 
 const qv08 = {
     version: "v2",
@@ -479,11 +469,8 @@ const qv01 = {
   }
 };
 
-app.post('/bst', (req, res) => {
-
-  const main = req.body;
-  
-  switch (main.count){
+app.post('/bst', (req, res) => {  
+  switch (req.body.count){
     case 1: 
       res.send(qv01);
       break;
@@ -514,30 +501,14 @@ app.post('/bst', (req, res) => {
     default:
       res.send(message);
   }
-  console.log(main.count);
 });
 
 app.put('/', (req, res) => {
   res.send(req.body); 
 });
 
-app.get('/', (req, res) => {
-  // const { name } = req.query;
-  // const message = `Hello ${name ? name : 'World'}`;
-  
+app.get('/', (req, res) => {  
   res.send(qv01);
-});
-
-app.get('/db', async (req, res) => {
-  try {
-    const clientDb = await pool.connect();
-    const result = await clientDb.query('SELECT * FROM test_table');
-    const results = { 'results': (result) ? result.rows : null};
-    res.send(results);
-    client.release();
-  } catch (err) {
-    res.send("Error " + err);
-  }
 });
 
 const db = require('./models');
@@ -547,12 +518,13 @@ app.post('/chat', async (req, res) => {
   const newChat = new Chat(req.body);
   
   try {
-    await newChat.save();
+    const chat = await newChat.save();
+    res.send(chat);
   } catch (err) {
-    // console.error(err.errors);
+    console.error(err);
   } 
 
-  res.send(newChat);
+  res.send({ err: 'invalid' });
 });
 
 app.get('/chat/:id', async (req, res) => {
