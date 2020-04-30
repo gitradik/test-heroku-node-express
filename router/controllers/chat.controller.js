@@ -11,8 +11,6 @@ module.exports.saveChat = ('/chat', async (req, res) => {
   } catch (err) {
     res.send(err);
   } 
-
-  res.end();
 });
 
 module.exports.getChatById = ('/chat/:id', async (req, res) => {
@@ -31,6 +29,4 @@ module.exports.getChatById = ('/chat/:id', async (req, res) => {
   } catch (err) {
     res.send(err);
   } 
-
-  res.end();
 });
