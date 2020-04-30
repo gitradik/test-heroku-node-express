@@ -8,9 +8,6 @@ const PORT = process.env.PORT || 80;
 
 app.use(cors());
 app.use(express.json());
-app.get('/', (req, res) => {
-    res.send({})
-})
 app.use(router);
 app.use('/static/image',
     express.static(__dirname + process.env.STATIC_URL, { fallthrough: true }),
