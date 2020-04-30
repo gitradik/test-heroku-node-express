@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/sequelize db:migrate --env production && node index.js",
+    "start": "node_modules/.bin/sequelize db:migrate --env production && node index.js",
     "dev": "nodemon"
   },
   "author": "",
@@ -15,7 +15,8 @@
     "express": "^4.17.1",
     "mysql2": "^2.1.0",
     "pg": "^7.18.2",
-    "sequelize": "^5.21.7"
+    "sequelize": "^5.21.7",
+    "sequelize-cli": "^5.5.1"
   },
   "devDependencies": {
     "sequelize-cli": "^5.5.1"
