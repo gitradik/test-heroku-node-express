@@ -543,7 +543,6 @@ app.get('/chat/:id', async (req, res) => {
     res.send(chats);
   } catch (err) {
     res.send(err);
-    // console.error(err.errors);
   } 
 
   res.end();
