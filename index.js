@@ -17,6 +17,3 @@ app.use('/static/image',
 );
 
 app.listen(PORT);
-
-
-

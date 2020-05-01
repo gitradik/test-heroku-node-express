@@ -687,83 +687,83 @@ var doors =
 //   }
 // };
 
-// const qv01 = {
-//   version: "v2",
-//   content: {
-//     messages: [
-//       {
-//         type: "list",
-//         top_element_style: "compact",
-//         buttons: [],
-//         elements: [
-//           {
-//             title: "Плохая звукоизоляция",
-//             image_url: "https://radiant-stream-65729.herokuapp.com/static/image/q01.png",
-//             buttons: [
-//               {
-//                 type: "dynamic_block_callback",
-//                 caption: "Выбрать",
-//                 url: "https://radiant-stream-65729.herokuapp.com/bst",
-//                 method: "post",
-//                 payload: {
-//                   count: 2,
+const qv01 = {
+  version: "v2",
+  content: {
+    messages: [
+      {
+        type: "list",
+        top_element_style: "compact",
+        buttons: [],
+        elements: [
+          {
+            title: "Плохая звукоизоляция",
+            image_url: "https://radiant-stream-65729.herokuapp.com/static/image/q01.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 2,
                   
-//                 }
-//               }
-//             ]
-//           },
-//           {
-//             title: "Плохая устойчивость к влаге",
-//             image_url: "https://radiant-stream-65729.herokuapp.com/static/image/q02.png",
-//             buttons: [
-//               {
-//                 type: "dynamic_block_callback",
-//                 caption: "Выбрать",
-//                 url: "https://radiant-stream-65729.herokuapp.com/bst",
-//                 method: "post",
-//                 payload: {
-//                   count: 2,
-//                 }
-//               }
-//             ]
-//           },
-//           {
-//             title: "Некачественные материалы",
-//             image_url: "https://radiant-stream-65729.herokuapp.com/static/image/q03.png",
-//             buttons: [
-//               {
-//                 type: "dynamic_block_callback",
-//                 caption: "Выбрать",
-//                 url: "https://radiant-stream-65729.herokuapp.com/bst",
-//                 method: "post",
-//                 payload: {
-//                   count: 2,
-//                 }
-//               }
-//             ]
-//           },
-//           {
-//             title: "Дверь не подлежала реставрации",
-//             image_url: "https://radiant-stream-65729.herokuapp.com/static/image/q04.png",
-//             buttons: [
-//               {
-//                 type: "dynamic_block_callback",
-//                 caption: "Выбрать",
-//                 url: "https://radiant-stream-65729.herokuapp.com/bst",
-//                 method: "post",
-//                 payload: {
-//                   count: 2,
-//                 }
-//               }
-//             ]
-//           }
-//         ]
-//       }
-//     ],
-//     actions: [],
-//     quick_replies: []
-//   }
-// };
+                }
+              }
+            ]
+          },
+          {
+            title: "Плохая устойчивость к влаге",
+            image_url: "https://radiant-stream-65729.herokuapp.com/static/image/q02.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 2,
+                }
+              }
+            ]
+          },
+          {
+            title: "Некачественные материалы",
+            image_url: "https://radiant-stream-65729.herokuapp.com/static/image/q03.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 2,
+                }
+              }
+            ]
+          },
+          {
+            title: "Дверь не подлежала реставрации",
+            image_url: "https://radiant-stream-65729.herokuapp.com/static/image/q04.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 2,
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    actions: [],
+    quick_replies: []
+  }
+};
 
 // app.post('/bst', (req, res) => {  
 //   switch (req.body.count){
