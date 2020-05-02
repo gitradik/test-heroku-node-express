@@ -2,23 +2,36 @@ const db = require('../../models');
 const Chat = require('../../models/chat')(db.sequelize, db.Sequelize);
 
 module.exports.saveUserResponse = async (req, res, next) => {
-  const chat = new Chat({
+  const newChat = {
+    ...req.body,
     userId: req.body.id,
-    key: req.body.key,
-  });
+  };
+  delete newChat.id;
 
   try {
-    await chat.save();
+    const obj = await Chat.findOne({
+      where: {
+        userId: newChat.userId,
+      }
+    });
+
+    if (obj) {
+      await obj.update(newChat);
+    } else {
+      await Chat.create(newChat);
+    }
+
     await next();
   } catch (err) {
     res.send(err);
   }
 };
 
-module.exports.getAllUserResponses = async (req, res, next) => {
+module.exports.setAllUserResponses = async (req, res, next) => {
   try {
-    req.body.responses = await Chat.findAll({
+    req.body.userChat = await Chat.findOne({
       attributes: [
+        'id',
         'userId',
         'key', 
         'type',
@@ -33,7 +46,7 @@ module.exports.getAllUserResponses = async (req, res, next) => {
       },
     });
     
-    next();
+    await next();
   } catch (err) {
     res.send(err);
   } 

@@ -1,9 +1,9 @@
 const { 
   saveUserResponse,
-  getAllUserResponses,
+  setAllUserResponses,
 } = require('./question.middleware');
 
 module.exports.questionMiddleware = {
   saveUserResponse,
-  getAllUserResponses,
+  setAllUserResponses,
 }; 

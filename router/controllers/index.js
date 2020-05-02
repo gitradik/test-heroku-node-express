@@ -1,7 +1,9 @@
 const {
-  getQuestionByCount,
+  getQuestionByKey,
+  getSelectedDoors,
 } = require('./question.controller');
 
 module.exports.questionController = {
-  getQuestionByCount,
+  getQuestionByKey,
+  getSelectedDoors,
 };

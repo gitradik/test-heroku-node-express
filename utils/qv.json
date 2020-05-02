@@ -116,7 +116,8 @@
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
-                    "key": 3
+                    "key": 3,
+                    "type": "modern"
                   }
                 }
               ]
@@ -132,7 +133,8 @@
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
-                    "key": 3
+                    "key": 3,
+                    "type": "hivde"
                   }
                 }
               ]
@@ -164,7 +166,8 @@
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
-                    "key": 4
+                    "key": 4,
+                    "time": "fast"
                   }
                 }
               ]
@@ -180,7 +183,8 @@
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
-                    "key": 4
+                    "key": 4,
+                    "time": "slow"
                   }
                 }
               ]
@@ -212,7 +216,8 @@
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
-                    "key": 5
+                    "key": 5,
+                    "adv": "silent"
                   }
                 }
               ]
@@ -228,7 +233,8 @@
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
-                    "key": 5
+                    "key": 5,
+                    "adv": "normal"
                   }
                 }
               ]
@@ -264,7 +270,8 @@
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
-                    "key": 6
+                    "key": 6,
+                    "modelType": "01"
                   }
                 }
               ]
@@ -280,7 +287,8 @@
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
-                    "key": 6
+                    "key": 6,
+                    "modelType": "02"
                   }
                 }
               ]
@@ -296,7 +304,8 @@
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
-                    "key": 6
+                    "key": 6,
+                    "modelType": "03"
                   }
                 }
               ]
@@ -328,7 +337,8 @@
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
-                    "key": 7
+                    "key": 7,
+                    "glass": false
                   }
                 }
               ]
@@ -344,7 +354,8 @@
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
-                    "key": 7
+                    "key": 7,
+                    "glass": true
                   }
                 }
               ]
@@ -376,11 +387,12 @@
                 {
                   "type": "dynamic_block_callback",
                   "caption": "Палисандр",
-                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
+                  "url": "https://radiant-stream-65729.herokuapp.com/qv-result",
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
-                    "key": 8
+                    "key": 8,
+                    "color": "red"
                   }
                 }
               ]
@@ -392,11 +404,12 @@
                 {
                   "type": "dynamic_block_callback",
                   "caption": "Выбрать",
-                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
+                  "url": "https://radiant-stream-65729.herokuapp.com/qv-result",
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
-                    "key": 8
+                    "key": 8,
+                    "color": "blue"
                   }
                 }
               ]
@@ -408,11 +421,12 @@
                 {
                   "type": "dynamic_block_callback",
                   "caption": "Выбрать",
-                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
+                  "url": "https://radiant-stream-65729.herokuapp.com/qv-result",
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
-                    "key": 8
+                    "key": 8,
+                    "color": "yellow"
                   }
                 }
               ]
@@ -429,25 +443,7 @@
     "key": 8,
     "version": "v2",
     "content": {
-      "messages": [
-        {
-          "type": "text",
-          "text": "SC-04"
-        },
-        {
-          "type": "text",
-          "text": "8300"
-        },
-        {
-          "type": "image",
-          "url": "https://radiant-stream-65729.herokuapp.com/static/image/qv07_02.png",
-          "buttons": []
-        },
-        {
-          "type": "text",
-          "text": "Укажите контактный номер телефона"
-        }
-      ],
+      "messages": [],
       "actions": [],
       "quick_replies": []
     }

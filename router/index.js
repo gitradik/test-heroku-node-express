@@ -9,6 +9,7 @@ const {
 } = require('./middleware');
 
 // QUESTION
-router.post('/qv', questionMiddleware.saveUserResponse, questionMiddleware.getAllUserResponses, questionController.getQuestionByCount);
+router.post('/qv', questionMiddleware.saveUserResponse, questionController.getQuestionByKey);
+router.post('/qv-result', questionMiddleware.saveUserResponse, questionMiddleware.setAllUserResponses, questionController.getSelectedDoors);
 
 module.exports = router;
