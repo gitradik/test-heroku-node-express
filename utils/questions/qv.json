@@ -1,86 +1,5 @@
 [
   {
-    "key": 2,
-    "version": "v2",
-    "content": {
-      "messages": [
-        {
-          "type": "list",
-          "top_element_style": "compact",
-          "buttons": [],
-          "elements": [
-            {
-              "title": "Плохая звукоизоляция",
-              "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/q01.png",
-              "buttons": [
-                {
-                  "type": "dynamic_block_callback",
-                  "caption": "Выбрать",
-                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
-                  "method": "post",
-                  "payload": {
-                    "id": "{{user_id}}",
-                    "count": 2                    
-                  }
-                }
-              ]
-            },
-            {
-              "title": "Плохая устойчивость к влаге",
-              "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/q02.png",
-              "buttons": [
-                {
-                  "type": "dynamic_block_callback",
-                  "caption": "Выбрать",
-                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
-                  "method": "post",
-                  "payload": {
-                    "id": "{{user_id}}",
-                    "count": 2
-                  }
-                }
-              ]
-            },
-            {
-              "title": "Некачественные материалы",
-              "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/q03.png",
-              "buttons": [
-                {
-                  "type": "dynamic_block_callback",
-                  "caption": "Выбрать",
-                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
-                  "method": "post",
-                  "payload": {
-                    "id": "{{user_id}}",
-                    "count": 2
-                  }
-                }
-              ]
-            },
-            {
-              "title": "Дверь не подлежала реставрации",
-              "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/q04.png",
-              "buttons": [
-                {
-                  "type": "dynamic_block_callback",
-                  "caption": "Выбрать",
-                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
-                  "method": "post",
-                  "payload": {
-                    "id": "{{user_id}}",
-                    "count": 2
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "actions": [],
-      "quick_replies": []
-    }
-  },
-  {
     "key": 1,
     "version": "v2",
     "content": {
@@ -100,8 +19,7 @@
                   "url": "https://radiant-stream-65729.herokuapp.com/qv",
                   "method": "post",
                   "payload": {
-                    "id": "{{user_id}}",
-                    "count": 2                    
+                    "key": 2                    
                   }
                 }
               ]
@@ -116,8 +34,7 @@
                   "url": "https://radiant-stream-65729.herokuapp.com/qv",
                   "method": "post",
                   "payload": {
-                    "id": "{{user_id}}",
-                    "count": 2
+                    "key": 2
                   }
                 }
               ]
@@ -132,8 +49,7 @@
                   "url": "https://radiant-stream-65729.herokuapp.com/qv",
                   "method": "post",
                   "payload": {
-                    "id": "{{user_id}}",
-                    "count": 2
+                    "key": 2
                   }
                 }
               ]
@@ -148,13 +64,119 @@
                   "url": "https://radiant-stream-65729.herokuapp.com/qv",
                   "method": "post",
                   "payload": {
-                    "id": "{{user_id}}",
-                    "count": 2
+                    "key": 2
                   }
                 }
               ]
             }
           ]
+        }
+      ],
+      "actions": [],
+      "quick_replies": []
+    }
+  },
+  {
+    "key": 2,
+    "version": "v2",
+    "content": {
+      "messages": [
+        {
+          "type": "cards",
+          "elements": [
+            {
+              "title": "КЛАССИЧЕСКИЕ ДВЕРИ",
+              "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/qv02_01.png",
+              "buttons": [
+                {
+                  "type": "dynamic_block_callback",
+                  "caption": "Выбрать",
+                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
+                  "method": "post",
+                  "payload": {
+                    "key": 3
+                  }
+                }
+              ]
+            },
+            {
+              "title": "СОВРЕМЕННЫЕ ДВЕРИ",
+              "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/qv02_02.png",
+              "buttons": [
+                {
+                  "type": "dynamic_block_callback",
+                  "caption": "Выбрать",
+                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
+                  "method": "post",
+                  "payload": {
+                    "key": 3
+                  }
+                }
+              ]
+            },
+            {
+              "title": "СКРЫТЫЕ ДВЕРИ",
+              "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/qv02_03.png",
+              "buttons": [
+                {
+                  "type": "dynamic_block_callback",
+                  "caption": "Выбрать",
+                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
+                  "method": "post",
+                  "payload": {
+                    "key": 3
+                  }
+                }
+              ]
+            }
+          ],
+          "image_aspect_ratio": "horizontal"
+        }
+      ],
+      "actions": [],
+      "quick_replies": []
+    }
+  },
+  {
+    "key": 3,
+    "version": "v2",
+    "content": {
+      "messages": [
+        {
+          "type": "cards",
+          "elements": [
+            {
+              "title": "На завтра! (на завтра существуют двери только в современном дизайне)",
+              "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/qv03_01.png",
+              "buttons": [
+                {
+                  "type": "dynamic_block_callback",
+                  "caption": "Выбрать",
+                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
+                  "method": "post",
+                  "payload": {
+                    "key": 4
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Готов подождать",
+              "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/qv03_02.png",
+              "buttons": [
+                {
+                  "type": "dynamic_block_callback",
+                  "caption": "Выбрать",
+                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
+                  "method": "post",
+                  "payload": {
+                    "key": 4
+                  }
+                }
+              ]
+            }
+          ],
+          "image_aspect_ratio": "horizontal"
         }
       ],
       "actions": [],

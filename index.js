@@ -10,9 +10,9 @@ app.use(cors());
 app.use(express.json());
 app.use(router);
 app.use('/static/image',
-    express.static(__dirname + process.env.STATIC_URL, { fallthrough: true }),
+    express.static(__dirname + process.env.IMG_URL, { fallthrough: true }),
     function (req, res) {
-        res.sendFile(__dirname + process.env.STATIC_URL + '/' + process.env.STATIC_IMG_DEFAULT);
+        res.sendFile(__dirname + process.env.IMG_URL + '/' + process.env.IMG_DEFAULT_NAME);
     },
 );
 

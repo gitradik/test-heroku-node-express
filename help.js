@@ -306,386 +306,386 @@ var doors =
   }        
 };
 
-// const doors = {
-//   sc04:{
-//     name: 'SC-04',
-//     type: 'modern',
-//     time: 'fast',
-//     adv: 'normal',
-//     modelType: '01',
-//     glass: false,
-//     color: '',
-//     img: 'https://radiant-stream-65729.herokuapp.com/static/image/qv07_02.png',
-//   }
-// };
+const doors = {
+  sc04:{
+    name: 'SC-04',
+    type: 'modern',
+    time: 'fast',
+    adv: 'normal',
+    modelType: '01',
+    glass: false,
+    color: '',
+    img: 'https://radiant-stream-65729.herokuapp.com/static/image/qv07_02.png',
+  }
+};
 
-// const message = {
-//   version: "v2",
-//   content:{
-//     messages: [
-//       {
-//         type: "text",
-//         text: "Ошибка"
-//       }
-//     ]
-//   }
-// };
+const message = {
+  version: "v2",
+  content:{
+    messages: [
+      {
+        type: "text",
+        text: "Ошибка"
+      }
+    ]
+  }
+};
 
-// const qv08 = {
-//     version: "v2",
-//     content: {
-//       messages: [
-//         // {
-//         //   type: "text",
-//         //   text: doors.model001.name,
-//         // },
-//         // {
-//         //   type: "text",
-//         //   text: doors.model001.price,
-//         // },
-//         // {
-//         //   type: "image",
-//         //   url: doors.model001.img,
-//         //   buttons: []
-//         // },
-//         {
-//           type: "text",
-//           text: "Укажите контактный номер телефона",
-//         }
-//       ],
-//       actions: [],
-//       quick_replies: []
-//     }
-// };
+const qv08 = {
+    version: "v2",
+    content: {
+      messages: [
+        // {
+        //   type: "text",
+        //   text: doors.model001.name,
+        // },
+        // {
+        //   type: "text",
+        //   text: doors.model001.price,
+        // },
+        // {
+        //   type: "image",
+        //   url: doors.model001.img,
+        //   buttons: []
+        // },
+        {
+          type: "text",
+          text: "Укажите контактный номер телефона",
+        }
+      ],
+      actions: [],
+      quick_replies: []
+    }
+};
 
-// const qv07 = {
-//   version: "v2",
-//   content: {
-//     messages: [
-//       {
-//         type: "text",
-//         text: "Выберите цвет"
-//       },
-//       {
-//         type: "cards",
-//         elements: [
-//           {
-//             title: "Белый ясень",
-//             image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv07_01.png",
-//             buttons: [
-//               {
-//                 type: "dynamic_block_callback",
-//                 caption: "Палисандр",
-//                 url: "https://radiant-stream-65729.herokuapp.com/bst",
-//                 method: "post",
-//                 payload: {
-//                   count: 8,
-//                 }
-//               }
-//             ]
-//           },
-//           {
-//             title: "Палисандр",
-//             image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv07_02.png",
-//             buttons: [
-//               {
-//                 type: "dynamic_block_callback",
-//                 caption: "Выбрать",
-//                 url: "https://radiant-stream-65729.herokuapp.com/bst",
-//                 method: "post",
-//                 payload: {
-//                   count: 8,
-//                 }
-//               }
-//             ]
-//           }
-//         ],
-//         image_aspect_ratio: "horizontal"
-//       }
-//     ],
-//     actions: [],
-//     quick_replies: []
-//   }
-// };
+const qv07 = {
+  version: "v2",
+  content: {
+    messages: [
+      {
+        type: "text",
+        text: "Выберите цвет"
+      },
+      {
+        type: "cards",
+        elements: [
+          {
+            title: "Белый ясень",
+            image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv07_01.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Палисандр",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 8,
+                }
+              }
+            ]
+          },
+          {
+            title: "Палисандр",
+            image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv07_02.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 8,
+                }
+              }
+            ]
+          }
+        ],
+        image_aspect_ratio: "horizontal"
+      }
+    ],
+    actions: [],
+    quick_replies: []
+  }
+};
 
-// const qv06 = {
-//   version: "v2",
-//   content: {
-//     messages: [
-//       {
-//         type: "cards",
-//         elements: [
-//           {
-//             title: "Без стекла",
-//             image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv06_02.png",
-//             buttons: [
-//               {
-//                 type: "dynamic_block_callback",
-//                 caption: "Выбрать",
-//                 url: "https://radiant-stream-65729.herokuapp.com/bst",
-//                 method: "post",
-//                 payload: {
-//                   count: 7,
-//                 }
-//               }
-//             ]
-//           },
-//           {
-//             title: "Со стеклом",
-//             image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv06_01.png",
-//             buttons: [
-//               {
-//                 type: "dynamic_block_callback",
-//                 caption: "Выбрать",
-//                 url: "https://radiant-stream-65729.herokuapp.com/bst",
-//                 method: "post",
-//                 payload: {
-//                   count: 7,
-//                 }
-//               }
-//             ]
-//           }
-//         ],
-//         image_aspect_ratio: "horizontal"
-//       }
-//     ],
-//     actions: [],
-//     quick_replies: []
-//   }
-// };
+const qv06 = {
+  version: "v2",
+  content: {
+    messages: [
+      {
+        type: "cards",
+        elements: [
+          {
+            title: "Без стекла",
+            image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv06_02.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 7,
+                }
+              }
+            ]
+          },
+          {
+            title: "Со стеклом",
+            image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv06_01.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 7,
+                }
+              }
+            ]
+          }
+        ],
+        image_aspect_ratio: "horizontal"
+      }
+    ],
+    actions: [],
+    quick_replies: []
+  }
+};
 
-// const qv05 = {
-//   version: "v2",
-//   content: {
-//     messages: [
-//       {
-//         type: "text",
-//         text: "Выберите одну из представленных моделей"
-//       },
-//       {
-//         type: "cards",
-//         elements: [
-//           {
-//             title: "Модель 01",
-//             image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv05_01.png",
-//             buttons: [
-//               {
-//                 type: "dynamic_block_callback",
-//                 caption: "Выбрать",
-//                 url: "https://radiant-stream-65729.herokuapp.com/bst",
-//                 method: "post",
-//                 payload: {
-//                   count: 6,
-//                 }
-//               }
-//             ]
-//           },
-//           {
-//             title: "Модель 02",
-//             image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv05_01.png",
-//             buttons: [
-//               {
-//                 type: "dynamic_block_callback",
-//                 caption: "Выбрать",
-//                 url: "https://radiant-stream-65729.herokuapp.com/bst",
-//                 method: "post",
-//                 payload: {
-//                   count: 6,
-//                 }
-//               }
-//             ]
-//           },
-//           {
-//             title: "Модель 03",
-//             image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv05_01.png",
-//             buttons: [
-//               {
-//                 type: "dynamic_block_callback",
-//                 caption: "Выбрать",
-//                 url: "https://radiant-stream-65729.herokuapp.com/bst",
-//                 method: "post",
-//                 payload: {
-//                   count: 6,
-//                 }
-//               }
-//             ]
-//           },
-//           {
-//             title: "Модель 05",
-//             image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv05_01.png",
-//             buttons: [
-//               {
-//                 type: "dynamic_block_callback",
-//                 caption: "Выбрать",
-//                 url: "https://radiant-stream-65729.herokuapp.com/bst",
-//                 method: "post",
-//                 payload: {
-//                   count: 6,
-//                 }
-//               }
-//             ]
-//           }
-//         ],
-//         image_aspect_ratio: "horizontal"
-//       }
-//     ],
-//     actions: [],
-//     quick_replies: []
-//   }
-// };
+const qv05 = {
+  version: "v2",
+  content: {
+    messages: [
+      {
+        type: "text",
+        text: "Выберите одну из представленных моделей"
+      },
+      {
+        type: "cards",
+        elements: [
+          {
+            title: "Модель 01",
+            image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv05_01.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 6,
+                }
+              }
+            ]
+          },
+          {
+            title: "Модель 02",
+            image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv05_01.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 6,
+                }
+              }
+            ]
+          },
+          {
+            title: "Модель 03",
+            image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv05_01.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 6,
+                }
+              }
+            ]
+          },
+          {
+            title: "Модель 05",
+            image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv05_01.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 6,
+                }
+              }
+            ]
+          }
+        ],
+        image_aspect_ratio: "horizontal"
+      }
+    ],
+    actions: [],
+    quick_replies: []
+  }
+};
 
-// const qv04 = {
-//   version: "v2",
-//   content: {
-//     messages: [
-//       {
-//         type: "cards",
-//         elements: [
-//           {
-//             title: "Двери с повышенной шумоизоляцией",
-//             image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv04_01.png",
-//             buttons: [
-//               {
-//                 type: "dynamic_block_callback",
-//                 caption: "Выбрать",
-//                 url: "https://radiant-stream-65729.herokuapp.com/bst",
-//                 method: "post",
-//                 payload: {
-//                   count: 5,
-//                 }
-//               }
-//             ]
-//           },
-//           {
-//             title: "Стандартные двери",
-//             image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv04_02.png",
-//             buttons: [
-//               {
-//                 type: "dynamic_block_callback",
-//                 caption: "Выбрать",
-//                 url: "https://radiant-stream-65729.herokuapp.com/bst",
-//                 method: "post",
-//                 payload: {
-//                   count: 5,
-//                 }
-//               }
-//             ]
-//           }
-//         ],
-//         image_aspect_ratio: "horizontal"
-//       }
-//     ],
-//     actions: [],
-//     quick_replies: []
-//   }
-// };
+const qv04 = {
+  version: "v2",
+  content: {
+    messages: [
+      {
+        type: "cards",
+        elements: [
+          {
+            title: "Двери с повышенной шумоизоляцией",
+            image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv04_01.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 5,
+                }
+              }
+            ]
+          },
+          {
+            title: "Стандартные двери",
+            image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv04_02.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 5,
+                }
+              }
+            ]
+          }
+        ],
+        image_aspect_ratio: "horizontal"
+      }
+    ],
+    actions: [],
+    quick_replies: []
+  }
+};
 
-// const qv03 = {
-//   version: "v2",
-//   content: {
-//     messages: [
-//       {
-//         type: "cards",
-//         elements: [
-//           {
-//             title: "На завтра! (на завтра существуют двери только в современном дизайне)",
-//             image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv03_01.png",
-//             buttons: [
-//               {
-//                 type: "dynamic_block_callback",
-//                 caption: "Выбрать",
-//                 url: "https://radiant-stream-65729.herokuapp.com/bst",
-//                 method: "post",
-//                 payload: {
-//                   count: 4,
-//                 }
-//               }
-//             ]
-//           },
-//           {
-//             title: "Готов подождать",
-//             image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv03_02.png",
-//             buttons: [
-//               {
-//                 type: "dynamic_block_callback",
-//                 caption: "Выбрать",
-//                 url: "https://radiant-stream-65729.herokuapp.com/bst",
-//                 method: "post",
-//                 payload: {
-//                   count: 4,
-//                 }
-//               }
-//             ]
-//           }
-//         ],
-//         image_aspect_ratio: "horizontal"
-//       }
-//     ],
-//     actions: [],
-//     quick_replies: []
-//   }
-// };
+const qv03 = {
+  version: "v2",
+  content: {
+    messages: [
+      {
+        type: "cards",
+        elements: [
+          {
+            title: "На завтра! (на завтра существуют двери только в современном дизайне)",
+            image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv03_01.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 4,
+                }
+              }
+            ]
+          },
+          {
+            title: "Готов подождать",
+            image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv03_02.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 4,
+                }
+              }
+            ]
+          }
+        ],
+        image_aspect_ratio: "horizontal"
+      }
+    ],
+    actions: [],
+    quick_replies: []
+  }
+};
 
-// const qv02 = {
-//   version: "v2",
-//   content: {
-//     messages: [
-//       {
-//         type: "cards",
-//         elements: [
-//           {
-//             title: "КЛАССИЧЕСКИЕ ДВЕРИ",
-//             image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv02_01.png",
-//             buttons: [
-//               {
-//                 type: "dynamic_block_callback",
-//                 caption: "Выбрать",
-//                 url: "https://radiant-stream-65729.herokuapp.com/bst",
-//                 method: "post",
-//                 payload: {
-//                   count: 3,
-//                 }
-//               }
-//             ]
-//           },
-//           {
-//             title: "СОВРЕМЕННЫЕ ДВЕРИ",
-//             image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv02_02.png",
-//             buttons: [
-//               {
-//                 type: "dynamic_block_callback",
-//                 caption: "Выбрать",
-//                 url: "https://radiant-stream-65729.herokuapp.com/bst",
-//                 method: "post",
-//                 payload: {
-//                   count: 3,
-//                 }
-//               }
-//             ]
-//           },
-//           {
-//             title: "СКРЫТЫЕ ДВЕРИ",
-//             image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv02_03.png",
-//             buttons: [
-//               {
-//                 type: "dynamic_block_callback",
-//                 caption: "Выбрать",
-//                 url: "https://radiant-stream-65729.herokuapp.com/bst",
-//                 method: "post",
-//                 payload: {
-//                   count: 3,
-//                 }
-//               }
-//             ]
-//           }
-//         ],
-//         image_aspect_ratio: "horizontal"
-//       }
-//     ],
-//     actions: [],
-//     quick_replies: []
-//   }
-// };
+const qv02 = {
+  version: "v2",
+  content: {
+    messages: [
+      {
+        type: "cards",
+        elements: [
+          {
+            title: "КЛАССИЧЕСКИЕ ДВЕРИ",
+            image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv02_01.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 3,
+                }
+              }
+            ]
+          },
+          {
+            title: "СОВРЕМЕННЫЕ ДВЕРИ",
+            image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv02_02.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 3,
+                }
+              }
+            ]
+          },
+          {
+            title: "СКРЫТЫЕ ДВЕРИ",
+            image_url: "https://radiant-stream-65729.herokuapp.com/static/image/qv02_03.png",
+            buttons: [
+              {
+                type: "dynamic_block_callback",
+                caption: "Выбрать",
+                url: "https://radiant-stream-65729.herokuapp.com/bst",
+                method: "post",
+                payload: {
+                  count: 3,
+                }
+              }
+            ]
+          }
+        ],
+        image_aspect_ratio: "horizontal"
+      }
+    ],
+    actions: [],
+    quick_replies: []
+  }
+};
 
 const qv01 = {
   version: "v2",

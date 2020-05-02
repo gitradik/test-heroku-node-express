@@ -5,7 +5,7 @@
     "database": "radiant",
     "host": "localhost",
     "dialect": "postgresql",
-    "operatorsAliases": false
+    "operatorsAliases": "0"
   },
   "test": {
     "username": "",
@@ -13,7 +13,7 @@
     "database": "",
     "host": "127.0.0.1",
     "dialect": "mysql",
-    "operatorsAliases": false
+    "operatorsAliases": "0"
   },
   "production": {
     "username": "qumytzzpempcor",
@@ -21,6 +21,6 @@
     "database": "d34qsumomi8gie",
     "host": "ec2-184-72-235-159.compute-1.amazonaws.com",
     "dialect": "postgresql",
-    "operatorsAliases": false
+    "operatorsAliases": "0"
   }
 }

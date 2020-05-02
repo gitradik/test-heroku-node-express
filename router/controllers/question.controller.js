@@ -1,12 +1,15 @@
 const questions = require('../../utils/questions/qv.json');
 
 module.exports.getQuestionByCount = (req, res) => {  
-  console.log('>>>>>>', req.body);
-
-  const qv = questions.find(q => q.key === req.body.count);
-  if (qv) { 
+  console.log('>>>>>>>>>>>>>>>>>>', req.body);
+  const qv = questions.find(q => q.key === req.body.key);
+  if (qv) {
     res.send(qv);
+  } else {
+    res.status(400).send({
+      err: {
+        message: "Question not found",
+      }
+    });
   }
-
-  res.send({ err: "not qv" });
 };
