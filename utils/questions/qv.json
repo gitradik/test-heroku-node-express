@@ -191,5 +191,264 @@
       "actions": [],
       "quick_replies": []
     }
+  },
+  {
+    "key": 4,
+    "version": "v2",
+    "content": {
+      "messages": [
+        {
+          "type": "cards",
+          "elements": [
+            {
+              "title": "Двери с повышенной шумоизоляцией",
+              "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/qv04_01.png",
+              "buttons": [
+                {
+                  "type": "dynamic_block_callback",
+                  "caption": "Выбрать",
+                  "url": "https://radiant-stream-65729.herokuapp.com/bst",
+                  "method": "post",
+                  "payload": {
+                    "id": "{{user_id}}",
+                    "key": 5
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Стандартные двери",
+              "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/qv04_02.png",
+              "buttons": [
+                {
+                  "type": "dynamic_block_callback",
+                  "caption": "Выбрать",
+                  "url": "https://radiant-stream-65729.herokuapp.com/bst",
+                  "method": "post",
+                  "payload": {
+                    "id": "{{user_id}}",
+                    "key": 5
+                  }
+                }
+              ]
+            }
+          ],
+          "image_aspect_ratio": "horizontal"
+        }
+      ],
+      "actions": [],
+      "quick_replies": []
+    }
+  },
+  {
+    "key": 5,
+    "version": "v2",
+    "content": {
+      "messages": [
+        {
+          "type": "text",
+          "text": "Выберите одну из представленных моделей"
+        },
+        {
+          "type": "cards",
+          "elements": [
+            {
+              "title": "Модель 01",
+              "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/qv05_01.png",
+              "buttons": [
+                {
+                  "type": "dynamic_block_callback",
+                  "caption": "Выбрать",
+                  "url": "https://radiant-stream-65729.herokuapp.com/bst",
+                  "method": "post",
+                  "payload": {
+                    "id": "{{user_id}}",
+                    "key": 6
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Модель 02",
+              "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/qv05_01.png",
+              "buttons": [
+                {
+                  "type": "dynamic_block_callback",
+                  "caption": "Выбрать",
+                  "url": "https://radiant-stream-65729.herokuapp.com/bst",
+                  "method": "post",
+                  "payload": {
+                    "id": "{{user_id}}",
+                    "key": 6
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Модель 03",
+              "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/qv05_01.png",
+              "buttons": [
+                {
+                  "type": "dynamic_block_callback",
+                  "caption": "Выбрать",
+                  "url": "https://radiant-stream-65729.herokuapp.com/bst",
+                  "method": "post",
+                  "payload": {
+                    "id": "{{user_id}}",
+                    "key": 6
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Модель 05",
+              "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/qv05_01.png",
+              "buttons": [
+                {
+                  "type": "dynamic_block_callback",
+                  "caption": "Выбрать",
+                  "url": "https://radiant-stream-65729.herokuapp.com/bst",
+                  "method": "post",
+                  "payload": {
+                    "id": "{{user_id}}",
+                    "key": 6
+                  }
+                }
+              ]
+            }
+          ],
+          "image_aspect_ratio": "horizontal"
+        }
+      ],
+      "actions": [],
+      "quick_replies": []
+    }
+  },
+  {
+    "key": 6,
+    "version": "v2",
+    "content": {
+      "messages": [
+        {
+          "type": "cards",
+          "elements": [
+            {
+              "title": "Без стекла",
+              "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/qv06_02.png",
+              "buttons": [
+                {
+                  "type": "dynamic_block_callback",
+                  "caption": "Выбрать",
+                  "url": "https://radiant-stream-65729.herokuapp.com/bst",
+                  "method": "post",
+                  "payload": {
+                    "id": "{{user_id}}",
+                    "key": 7
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Со стеклом",
+              "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/qv06_01.png",
+              "buttons": [
+                {
+                  "type": "dynamic_block_callback",
+                  "caption": "Выбрать",
+                  "url": "https://radiant-stream-65729.herokuapp.com/bst",
+                  "method": "post",
+                  "payload": {
+                    "id": "{{user_id}}",
+                    "key": 7
+                  }
+                }
+              ]
+            }
+          ],
+          "image_aspect_ratio": "horizontal"
+        }
+      ],
+      "actions": [],
+      "quick_replies": []
+    }
+  },
+  {
+    "key": 7,
+    "version": "v2",
+    "content": {
+      "messages": [
+        {
+          "type": "text",
+          "text": "Выберите цвет"
+        },
+        {
+          "type": "cards",
+          "elements": [
+            {
+              "title": "Белый ясень",
+              "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/qv07_01.png",
+              "buttons": [
+                {
+                  "type": "dynamic_block_callback",
+                  "caption": "Палисандр",
+                  "url": "https://radiant-stream-65729.herokuapp.com/bst",
+                  "method": "post",
+                  "payload": {
+                    "id": "{{user_id}}",
+                    "key": 8
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Палисандр",
+              "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/qv07_02.png",
+              "buttons": [
+                {
+                  "type": "dynamic_block_callback",
+                  "caption": "Выбрать",
+                  "url": "https://radiant-stream-65729.herokuapp.com/bst",
+                  "method": "post",
+                  "payload": {
+                    "id": "{{user_id}}",
+                    "key": 8
+                  }
+                }
+              ]
+            }
+          ],
+          "image_aspect_ratio": "horizontal"
+        }
+      ],
+      "actions": [],
+      "quick_replies": []
+    }
+  },
+  {
+    "key": 8,
+    "version": "v2",
+    "content": {
+      "messages": [
+        {
+          "type": "text",
+          "text": "SC-04"
+        },
+        {
+          "type": "text",
+          "text": "8300"
+        },
+        {
+          "type": "image",
+          "url": "https://radiant-stream-65729.herokuapp.com/static/image/qv07_02.png",
+          "buttons": []
+        },
+        {
+          "type": "text",
+          "text": "Укажите контактный номер телефона"
+        }
+      ],
+      "actions": [],
+      "quick_replies": []
+    }
   }
 ]

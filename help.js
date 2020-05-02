@@ -45,10 +45,11 @@ var selectors = {
 
 
 var doors = 
-{"SC-04":{
+{
+  "SC-04": {
   "article":"SC-04",
   "manufacturer":"kofrad","delivery":"15-21","design":"modern","silent":"standart","repair":"high","waterproof":"high","ecology":"standart","lifetime":"standart","params":[1,4,1,1,1], "mayHaveGlass":false, "glassOnly":false,
-  "shop":[1,2,3], "pictures":[
+  "shop":[1,2,3], "pictures": [
         {"title":"Белый ясень","price":6403,"url":"kofrad-sc04-beliiyasen.jpg","ral":false},
         {"title":"Эш вайт","price":6403,"url":"kofrad-sc04-eshvait.jpg","ral":false},
         {"title":"Орех","price":6111,"url":"kofrad-sc04-oreh.jpg","ral":false}, 
