@@ -336,19 +336,19 @@ const qv08 = {
     version: "v2",
     content: {
       messages: [
-        // {
-        //   type: "text",
-        //   text: doors.model001.name,
-        // },
-        // {
-        //   type: "text",
-        //   text: doors.model001.price,
-        // },
-        // {
-        //   type: "image",
-        //   url: doors.model001.img,
-        //   buttons: []
-        // },
+        {
+          type: "text",
+          text: 'SC-04',
+        },
+        {
+          type: "text",
+          text: '8300',
+        },
+        {
+          type: "image",
+          url: 'https://radiant-stream-65729.herokuapp.com/static/image/qv07_02.png',
+          buttons: []
+        },
         {
           type: "text",
           text: "Укажите контактный номер телефона",

@@ -207,7 +207,7 @@
                 {
                   "type": "dynamic_block_callback",
                   "caption": "Выбрать",
-                  "url": "https://radiant-stream-65729.herokuapp.com/bst",
+                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
@@ -223,7 +223,7 @@
                 {
                   "type": "dynamic_block_callback",
                   "caption": "Выбрать",
-                  "url": "https://radiant-stream-65729.herokuapp.com/bst",
+                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
@@ -259,7 +259,7 @@
                 {
                   "type": "dynamic_block_callback",
                   "caption": "Выбрать",
-                  "url": "https://radiant-stream-65729.herokuapp.com/bst",
+                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
@@ -275,7 +275,7 @@
                 {
                   "type": "dynamic_block_callback",
                   "caption": "Выбрать",
-                  "url": "https://radiant-stream-65729.herokuapp.com/bst",
+                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
@@ -291,7 +291,7 @@
                 {
                   "type": "dynamic_block_callback",
                   "caption": "Выбрать",
-                  "url": "https://radiant-stream-65729.herokuapp.com/bst",
+                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
@@ -307,7 +307,7 @@
                 {
                   "type": "dynamic_block_callback",
                   "caption": "Выбрать",
-                  "url": "https://radiant-stream-65729.herokuapp.com/bst",
+                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
@@ -339,7 +339,7 @@
                 {
                   "type": "dynamic_block_callback",
                   "caption": "Выбрать",
-                  "url": "https://radiant-stream-65729.herokuapp.com/bst",
+                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
@@ -355,7 +355,7 @@
                 {
                   "type": "dynamic_block_callback",
                   "caption": "Выбрать",
-                  "url": "https://radiant-stream-65729.herokuapp.com/bst",
+                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
@@ -391,7 +391,7 @@
                 {
                   "type": "dynamic_block_callback",
                   "caption": "Палисандр",
-                  "url": "https://radiant-stream-65729.herokuapp.com/bst",
+                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
@@ -407,7 +407,7 @@
                 {
                   "type": "dynamic_block_callback",
                   "caption": "Выбрать",
-                  "url": "https://radiant-stream-65729.herokuapp.com/bst",
+                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
