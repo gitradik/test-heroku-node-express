@@ -2,15 +2,13 @@ const express = require('express');
 const router = express.Router();
 
 const { 
-  chatController,
   questionController,
 } = require('./controllers');
-
-// CHAT
-router.post('/chat', chatController.saveChat);
-router.get('/chat/:id', chatController.getChatById);
+const {
+  questionMiddleware,
+} = require('./middleware');
 
 // QUESTION
-router.post('/qv', questionController.getQuestionByCount);
+router.post('/qv', questionMiddleware.saveUserResponse, questionMiddleware.getAllUserResponses, questionController.getQuestionByCount);
 
 module.exports = router;
