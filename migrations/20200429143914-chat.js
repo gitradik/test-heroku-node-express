@@ -17,6 +17,30 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
+      type: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+      time: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+      adv: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+      modelType: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+      glass: {
+        type: Sequelize.BOOLEAN,
+        allowNull: true,
+      },
+      color: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

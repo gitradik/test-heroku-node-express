@@ -20,7 +20,7 @@
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
-                    "key": 2                    
+                    "key": 2           
                   }
                 }
               ]
@@ -99,7 +99,8 @@
                   "method": "post",
                   "payload": {
                     "id": "{{user_id}}",
-                    "key": 3
+                    "key": 3,
+                    "type": "classic"
                   }
                 }
               ]
@@ -299,22 +300,6 @@
                   }
                 }
               ]
-            },
-            {
-              "title": "Модель 05",
-              "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/qv05_01.png",
-              "buttons": [
-                {
-                  "type": "dynamic_block_callback",
-                  "caption": "Выбрать",
-                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
-                  "method": "post",
-                  "payload": {
-                    "id": "{{user_id}}",
-                    "key": 6
-                  }
-                }
-              ]
             }
           ],
           "image_aspect_ratio": "horizontal"
@@ -385,7 +370,7 @@
           "type": "cards",
           "elements": [
             {
-              "title": "Белый ясень",
+              "title": "Red",
               "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/qv07_01.png",
               "buttons": [
                 {
@@ -401,7 +386,23 @@
               ]
             },
             {
-              "title": "Палисандр",
+              "title": "Blue",
+              "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/qv07_02.png",
+              "buttons": [
+                {
+                  "type": "dynamic_block_callback",
+                  "caption": "Выбрать",
+                  "url": "https://radiant-stream-65729.herokuapp.com/qv",
+                  "method": "post",
+                  "payload": {
+                    "id": "{{user_id}}",
+                    "key": 8
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Yellow",
               "image_url": "https://radiant-stream-65729.herokuapp.com/static/image/qv07_02.png",
               "buttons": [
                 {

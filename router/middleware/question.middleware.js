@@ -18,7 +18,16 @@ module.exports.saveUserResponse = async (req, res, next) => {
 module.exports.getAllUserResponses = async (req, res, next) => {
   try {
     req.body.responses = await Chat.findAll({
-      attributes: ['userId', 'key'],
+      attributes: [
+        'userId',
+        'key', 
+        'type',
+        'time',
+        'adv',
+        'modelType',
+        'glass',
+        'color',
+      ],
       where: {
         userId: req.body.id,
       },

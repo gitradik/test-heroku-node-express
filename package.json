@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node_modules/.bin/sequelize db:migrate --env production && node index.js",
+    "start": "node_modules/.bin/sequelize db:migrate:undo && node_modules/.bin/sequelize db:migrate --env production && node index.js",
     "dev": "nodemon"
   },
   "author": "",
