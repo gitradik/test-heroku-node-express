@@ -21,8 +21,10 @@ module.exports.getSelectedDoors = async (req, res) => {
 
   if (qv && lastQvKey === qv.key) {
     const { userChat } = req.body;
-  
-    const selectedDoors = doors.filter(d => 
+    let selectedDoors = [];
+
+    if (userChat) {
+      selectedDoors = doors.filter(d => 
         d.type === userChat.type &&
         d.time === userChat.time &&
         d.adv === userChat.adv &&
@@ -30,6 +32,7 @@ module.exports.getSelectedDoors = async (req, res) => {
         d.glass === userChat.glass &&
         d.color === userChat.color
       );
+    }
 
     qv.content.messages = generateMessages(selectedDoors);
 
