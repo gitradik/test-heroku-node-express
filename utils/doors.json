@@ -2638,5 +2638,16 @@
     "color": "yellow",
     "price": "1000 грн",
     "img": "https://radiant-stream-65729.herokuapp.com/static/image/qv07_02.png"
+  },
+  {
+    "name": "door-241",
+    "type": "hivde",
+    "time": "fast",
+    "adv": "normal",
+    "modelType": "03",
+    "glass": true,
+    "color": "yellow",
+    "price": "1000 грн",
+    "img": "https://radiant-stream-65729.herokuapp.com/static/image/qv07_02.png"
   }
 ]
