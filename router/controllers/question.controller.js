@@ -32,7 +32,7 @@ module.exports.getSelectedDoors = async (req, res) => {
         d.glass === userChat.glass &&
         d.color === userChat.color
       );
-    }
+    } 
 
     qv.content.messages = generateMessages(selectedDoors);
 
@@ -49,7 +49,7 @@ module.exports.getSelectedDoors = async (req, res) => {
 function generateMessages(doors) {
   const messages = [];
 
-  if (Array.isArray(doors)) {
+  if (doors?.length) {
     doors.forEach(d => {
       messages.push({
         "type": "text",
@@ -60,7 +60,12 @@ function generateMessages(doors) {
         "url": d.img,
         "buttons": [],
       });
-    })
+    });
+  } else {
+    messages.push({
+      "type": "text",
+      "text": "Нет двери"
+    });
   }
 
   messages.push({
