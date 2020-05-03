@@ -49,7 +49,7 @@ module.exports.getSelectedDoors = async (req, res) => {
 function generateMessages(doors) {
   const messages = [];
 
-  if (doors?.length) {
+  if (doors.length) {
     doors.forEach(d => {
       messages.push({
         "type": "text",
