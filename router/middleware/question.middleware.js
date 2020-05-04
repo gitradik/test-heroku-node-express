@@ -16,12 +16,12 @@ module.exports.saveUserResponse = async (req, res, next) => {
     });
 
     if (obj) {
-      await obj.update(newChat);
-    } else {
-      const chat = await Chat.create(newChat);
+      const chat = await obj.update(newChat);
       req.body = {
-        ...chat,
+        ...chat.dataValues,
       };
+    } else {
+      await Chat.create(newChat);
     }
 
     await next();
