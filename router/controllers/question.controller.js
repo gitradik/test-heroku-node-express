@@ -20,19 +20,14 @@ module.exports.getSelectedDoors = async (req, res) => {
   const qv = questions.find(q => q.key === req.body.key);
 
   if (qv && lastQvKey === qv.key) {
-    const { userChat } = req.body;
-    let selectedDoors = [];
-
-    if (userChat) {
-      selectedDoors = doors.filter(d => 
-        d.type === userChat.type &&
-        d.time === userChat.time &&
-        d.adv === userChat.adv &&
-        d.modelType === userChat.modelType &&
-        d.glass === userChat.glass &&
-        d.color === userChat.color
-      );
-    } 
+    const selectedDoors = doors.filter(d =>
+      d.type === req.body.type &&
+      d.time === req.body.time &&
+      d.adv === req.body.adv &&
+      d.modelType === req.body.modelType &&
+      d.glass === req.body.glass &&
+      d.color === req.body.color
+    );
 
     qv.content.messages = generateMessages(selectedDoors);
 

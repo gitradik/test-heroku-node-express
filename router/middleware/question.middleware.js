@@ -18,36 +18,14 @@ module.exports.saveUserResponse = async (req, res, next) => {
     if (obj) {
       await obj.update(newChat);
     } else {
-      await Chat.create(newChat);
+      const chat = await Chat.create(newChat);
+      req.body = {
+        ...chat,
+      };
     }
 
     await next();
   } catch (err) {
     res.send(err);
   }
-};
-
-module.exports.setAllUserResponses = async (req, res, next) => {
-  try {
-    req.body.userChat = await Chat.findOne({
-      attributes: [
-        'id',
-        'userId',
-        'key', 
-        'type',
-        'time',
-        'adv',
-        'modelType',
-        'glass',
-        'color',
-      ],
-      where: {
-        userId: req.body.id,
-      },
-    });
-    
-    await next();
-  } catch (err) {
-    res.send(err);
-  } 
 };

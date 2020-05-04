@@ -10,6 +10,6 @@ const {
 
 // QUESTION
 router.post('/qv', questionMiddleware.saveUserResponse, questionController.getQuestionByKey);
-router.post('/qv-result', questionMiddleware.saveUserResponse, questionMiddleware.setAllUserResponses, questionController.getSelectedDoors);
+router.post('/qv-result', questionMiddleware.saveUserResponse, questionController.getSelectedDoors);
 
 module.exports = router;
